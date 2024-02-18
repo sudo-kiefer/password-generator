@@ -3,7 +3,7 @@ const specialCharacters = ['!','@','#','$','%','^','&','*','?'];
 const lowerLetters = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
 const upperLetters = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
 
-function createPassword() {
+function generatePassword() {
     let password = [];
     function charTypeSelector() {
         return Math.floor(Math.random() * 4);
@@ -31,5 +31,5 @@ function createPassword() {
     console.log(stringPassword.replace(/,/g,""));
 }
 
-createPassword();
+generatePassword();
 
